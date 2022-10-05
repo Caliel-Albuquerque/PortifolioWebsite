@@ -41,8 +41,8 @@ for(i = 0; i < accordionContent.length; i++){
 
 
 /*==================== QUALIFICATION TABS ====================*/
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-target]')
+/*const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
 
 
 tabs.forEach(tab =>{
@@ -59,7 +59,33 @@ tabs.forEach(tab =>{
         })
         tab.classList.add('qualification_active')
     })
+})*/
+
+var qualificationExp = document.getElementById("work");
+var qualificationEdu = document.getElementById("education");
+
+var qualificationEduContent = document.getElementById("contentEdu");
+var qualificationExpContent = document.getElementById("contentExp");
+
+if(qualificationExpContent.style.display = "block"){
+    qualificationExpContent.style.display = "none"
+}
+
+qualificationExp.addEventListener('click', function(){
+    qualificationExpContent.style.display = "block"
+    qualificationEduContent.style.display = "none"
+    qualificationExp.classList.add("qualification_active")
+    qualificationEdu.classList.remove("qualification_active")
 })
+
+qualificationEdu.addEventListener('click', function(){
+    qualificationExpContent.style.display = "none"
+    qualificationEduContent.style.display = "block"
+    qualificationEdu.classList.add("qualification_active")
+    qualificationExp.classList.remove("qualification_active")
+})
+
+
 /*==================== SERVICES MODAL ====================*/
 
 

@@ -558,14 +558,15 @@ img {
   transform: translate(6px, -7px);
 }
 
-.qualification [data-content]{
-  display: none;
+
+
+.qualification_active{
+  border-bottom: 3px solid var(--first-color);
+  transition: 0.2s ease-in-out;
+  color: var(--first-color);
 }
 
 
-.qualification_active[data-content]{
-  display: block;
-}
 /*==================== SERVICES ====================*/
 
 
