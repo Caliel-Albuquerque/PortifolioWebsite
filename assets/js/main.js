@@ -30,10 +30,36 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
 
+var accordionContent = document.getElementsByClassName('skills_header');
+
+for(i = 0; i < accordionContent.length; i++){
+    accordionContent[i].addEventListener('click', function() {
+       accordionContent[i].classList.toggle("active");
+        
+    });
+}
+
 
 /*==================== QUALIFICATION TABS ====================*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-target]')
 
 
+tabs.forEach(tab =>{
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification_active')
+        })
+        target.classList.add('qualification_active')
+
+        tab.forEach(tab => {
+            tab.classList.remove('qualification_active')
+        })
+        tab.classList.add('qualification_active')
+    })
+})
 /*==================== SERVICES MODAL ====================*/
 
 
