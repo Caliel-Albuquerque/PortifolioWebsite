@@ -42,7 +42,12 @@
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#portifolio" class="nav_link">
+                        <a href="#qualification" class="nav_link">
+                            <i class="uil uil-graduation-cap nav_icon"></i>Qualificações
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#portfolio" class="nav_link">
                             <i class="uil uil-scenery nav_icon"></i> Porfolio
                         </a>
                     </li>
@@ -56,6 +61,10 @@
             </div>
 
             <div class="nav_btns">
+
+                <!--Theme change Button-->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav_toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
@@ -305,7 +314,7 @@
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification section">
+        <section class="qualification section" id="qualification">
 
             <h2 class="section__title">Qualicações</h2>
             <span class="section__subtitle">Minha jornada profissional</span>
@@ -547,22 +556,66 @@
 
         <!--==================== RECENT PROJECT ====================-->
         <section class="project section">
+            <div class="project_bg">
+                <div class="project_container container grid">
+                    <div class="project_data">
+                        <h2 class="project__title">Projetos mais recentes</h2>
+                        <p class="project__description">Alguns projetos mais recentes </p>
+                        <a href="#contact" class="button button--flex button--white">Veja</a>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
-        <!--==================== CONTACT ME ====================-->
-        <section class="contact section" id="contact">
-
-        </section>
+        
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Caliel</h1>
+                    <span class="footer_subtitle">Frontend developer</span>
+                </div>
 
+                <ul class="footer_links">
+                    <li>
+                        <a href="#about" class="footer_link">Sobre Mim</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="footer_link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#qualification" class="footer_link">Qualificações</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer_link">Portifolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="footer_link">Sobre Mim</a>
+                    </li>
+                </ul>
+
+                <div class="footer_socials">
+                    <a href="https://www.linkedin.com/in/caliel-farias-72b840213/" target="_blank" class="footer_social"><i class="uil uil-linkedin-alt"></i></a>
+                    <a href="https://github.com/Caliel-Albuquerque" target="_blank" class="footer_social"><i class="uil uil-github-alt"></i></a>
+                </div>
+            </div>
+
+            <p class="footer_copy">
+                &#169; CalielFarias. All right reserved
+            </p>
+        </div>
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-
+        <a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup_icon"></i></a>
 
     <!--==================== SWIPER JS ====================-->
     <script src="./assets/js/swiper-bundle.min.js"></script>
